@@ -1,0 +1,23 @@
+{
+  "name": "client",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "datatables.net": "^2.1.1",
+    "datatables.net-bs": "^2.1.1",
+    "metisMenu": "^2.6.2",
+    "font-awesome": "^4.7.0",
+    "bootstrap-datepicker": "^1.6.4",
+    "bootstrap-select": "^1.12.2"
+  }
+}
