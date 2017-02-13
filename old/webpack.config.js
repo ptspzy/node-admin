@@ -26,11 +26,9 @@ module.exports = {
         // "pg-third-paty-cp.js": clientSrcPath + '/js/pg-third-paty-cp.js'
     },
     resolve: {
-        // root: [path.join(__dirname, "./client/bower_components/")],
-        modules: [
-            path.join(__dirname, "./client/bower_components/"),
-            "node_modules"
-        ],
+        root: [path.join(__dirname, "./client/bower_components/")],
+        // modulesDirectories: ["node_modules", "./client/bower_components/"],
+        // modulesDirectories: ["web_modules", "node_modules", "./client/bower_components"],
         alias: {
             'bootstrap-select': path.join(__dirname, clientSrcPath, "/bower_components/bootstrap-select/dist/js/bootstrap-select.js"),
             'datatables.net': path.join(__dirname, clientSrcPath, "/bower_components/datatables.net/js/jquery.dataTables.js"),
@@ -43,13 +41,9 @@ module.exports = {
         filename: 'js/[name].js'
     },
     module: {
-        rules: [{
-            test: /.css$/,
-            use: ExtractTextPlugin.extract({
-                fallback: "style-loader",
-                use: "css-loader",
-                // publicPath: "/dist"
-            })
+        loaders: [{
+            test: /\.css$/,
+            loader: ExtractTextPlugin.extract('style-loader', 'css-loader') // just extract the raw text from css file, not transfer to js resourc
         }, {
             test: /\.(jpeg|jpg|png|gif)$/,
             loader: 'file-loader?name=img/[name].[ext]'
