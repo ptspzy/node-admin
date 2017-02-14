@@ -7,8 +7,8 @@
 
     <title><%=title%></title>
 
-    <link href="client/css/common-libs.css" rel="stylesheet">
-    <link href="client/css/manage-content.css" rel="stylesheet">
+    <link href="/client/css/common-libs.css" rel="stylesheet">
+    <link href="/client/css/pg-manage-content.css" rel="stylesheet">
 </head>
 
 <body>
@@ -34,49 +34,45 @@
                     <form role="form">
 
                         <div class="panel-body">
-
-                            <div class="row">
-                                <div class="col-md-2">
-                                    <div class="form-group">
-                                        <div class='input-group date' id='datetimepicker10'>
-                                            <input type='text' class="form-control" placeholder="请输入时间"/>
-                                            <span class="input-group-addon">
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <div class='input-group date' id='datetimepicker10'>
+                                        <input type='text' class="form-control" placeholder="请输入时间"/>
+                                        <span class="input-group-addon">
                                         <span class="glyphicon glyphicon-calendar">
                                         </span>
                                     </span>
-                                        </div>
                                     </div>
                                 </div>
+                            </div>
 
-                                <div class="col-md-2">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" id="bookID" placeholder="请输入书号">
-                                    </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="bookID" placeholder="请输入书号">
                                 </div>
+                            </div>
 
-                                <div class="col-md-2">
-                                    <div class="form-group">
-                                        <select class="selectpicker">
-                                            <option>按付费总值</option>
-                                            <option>按付费总值</option>
-                                            <option>按付费总值</option>
-                                        </select>
-                                    </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <select class="selectpicker">
+                                        <option>按付费总值</option>
+                                        <option>按付费总值</option>
+                                        <option>按付费总值</option>
+                                    </select>
                                 </div>
+                            </div>
 
-                                <div class="col-md-2">
-                                    <div class="form-group">
-                                        <select class="selectpicker">
-                                            <option>递减</option>
-                                            <option>递增</option>
-                                        </select>
-                                    </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <select class="selectpicker">
+                                        <option>递减</option>
+                                        <option>递增</option>
+                                    </select>
                                 </div>
+                            </div>
 
-                                <div class="col-md-2">
-                                    <button class="btn btn-primary " id="btnSearch">搜索</button>
-                                </div>
-
+                            <div class="col-md-2">
+                                <button class="btn btn-primary " id="btnSearch">搜索</button>
                             </div>
 
                         </div>
@@ -135,7 +131,7 @@
                                 <td>219.32</td>
                                 <td>10393232</td>
                                 <td>每日统计</td>
-                                <td><a href="/book/10000">查看详情</a></td>
+                                <td><a href="/book_detail/10000">查看详情</a></td>
                             </tr>
                             <tr>
                                 <td>16-12-25</td>
@@ -152,7 +148,7 @@
                                 <td>219.32</td>
                                 <td>10393232</td>
                                 <td>每日统计</td>
-                                <td><a href="/book/10000">查看详情</a></td>
+                                <td><a href="/book_detail/10000">查看详情</a></td>
                             </tr>
                             <tr>
                                 <td>16-12-25</td>
@@ -169,7 +165,7 @@
                                 <td>219.32</td>
                                 <td>10393232</td>
                                 <td>每日统计</td>
-                                <td><a href="/book/10000">查看详情</a></td>
+                                <td><a href="/book_detail/10000">查看详情</a></td>
                             </tr>
                             <tr>
                                 <td>16-12-25</td>
@@ -186,7 +182,7 @@
                                 <td>219.32</td>
                                 <td>10393232</td>
                                 <td>每日统计</td>
-                                <td><a href="/book/10000">查看详情</a></td>
+                                <td><a href="/book_detail/10000">查看详情</a></td>
                             </tr>
                             <tr>
                                 <td>16-12-25</td>
@@ -203,7 +199,7 @@
                                 <td>219.32</td>
                                 <td>10393232</td>
                                 <td>每日统计</td>
-                                <td><a href="/book/10000">查看详情</a></td>
+                                <td><a href="/book_detail/10000">查看详情</a></td>
                             </tr>
                             <tr>
                                 <td>16-12-25</td>
@@ -220,7 +216,7 @@
                                 <td>219.32</td>
                                 <td>10393232</td>
                                 <td>每日统计</td>
-                                <td><a href="/book/10000">查看详情</a></td>
+                                <td><a href="/book_detail/10000">查看详情</a></td>
                             </tr>
                             <tr>
                                 <td>16-12-25</td>
@@ -237,7 +233,7 @@
                                 <td>219.32</td>
                                 <td>10393232</td>
                                 <td>每日统计</td>
-                                <td><a href="/book/10000">查看详情</a></td>
+                                <td><a href="/book_detail/10000">查看详情</a></td>
                             </tr>
                             <tr>
                                 <td>16-12-25</td>
@@ -254,7 +250,7 @@
                                 <td>219.32</td>
                                 <td>10393232</td>
                                 <td>每日统计</td>
-                                <td><a href="/book/10000">查看详情</a></td>
+                                <td><a href="/book_detail/10000">查看详情</a></td>
                             </tr>
                             <tr>
                                 <td>16-12-25</td>
@@ -271,7 +267,7 @@
                                 <td>219.32</td>
                                 <td>10393232</td>
                                 <td>每日统计</td>
-                                <td><a href="/book/10000">查看详情</a></td>
+                                <td><a href="/book_detail/10000">查看详情</a></td>
                             </tr>
                             <tr>
                                 <td>16-12-25</td>
@@ -288,7 +284,7 @@
                                 <td>219.32</td>
                                 <td>10393232</td>
                                 <td>每日统计</td>
-                                <td><a href="/book/10000">查看详情</a></td>
+                                <td><a href="/book_detail/10000">查看详情</a></td>
                             </tr>
                             <tr>
                                 <td>16-12-25</td>
@@ -305,7 +301,7 @@
                                 <td>219.32</td>
                                 <td>10393232</td>
                                 <td>每日统计</td>
-                                <td><a href="/book/10000">查看详情</a></td>
+                                <td><a href="/book_detail/10000">查看详情</a></td>
                             </tr>
                             <tr>
                                 <td>16-12-25</td>
@@ -322,7 +318,7 @@
                                 <td>219.32</td>
                                 <td>10393232</td>
                                 <td>每日统计</td>
-                                <td><a href="/book/10000">查看详情</a></td>
+                                <td><a href="/book_detail/10000">查看详情</a></td>
                             </tr>
                             <tr>
                                 <td>16-12-25</td>
@@ -339,7 +335,7 @@
                                 <td>219.32</td>
                                 <td>10393232</td>
                                 <td>每日统计</td>
-                                <td><a href="/book/10000">查看详情</a></td>
+                                <td><a href="/book_detail/10000">查看详情</a></td>
                             </tr>
                             <tr>
                                 <td>16-12-25</td>
@@ -356,7 +352,7 @@
                                 <td>219.32</td>
                                 <td>10393232</td>
                                 <td>每日统计</td>
-                                <td><a href="/book/10000">查看详情</a></td>
+                                <td><a href="/book_detail/10000">查看详情</a></td>
                             </tr>
                             </tbody>
                         </table>
@@ -377,8 +373,8 @@
 
 
 <!-- JavaScript -->
-<script src="client/js/common-libs.js"></script>
-<script src="client/js/manage-content.js"></script>
+<script src="/client/js/common-libs.js"></script>
+<script src="/client/js/pg-manage-content.js"></script>
 </body>
 
 </html>

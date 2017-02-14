@@ -8,25 +8,26 @@ var clientDistPath = './dist/client';
 module.exports = {
     entry: {
         "common-libs": [
-            // common styles
 
+            // common styles
             clientSrcPath + '/bower_components/font-awesome/css/font-awesome.css',
             clientSrcPath + '/bower_components/metisMenu/dist/metisMenu.css',
             clientSrcPath + '/bower_components/bootstrap/dist/css/bootstrap.css',
             clientSrcPath + '/bower_components/datatables.net-bs/css/dataTables.bootstrap.css',
-            clientSrcPath + '/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css',
             clientSrcPath + '/css/sb-admin-2.css',
 
             'jquery', 'metisMenu', 'bootstrap'
         ],
-        "manage-content": clientSrcPath + '/js/manage-content.js',
-        "book": clientSrcPath + '/js/book.js',
-        "channel-add": clientSrcPath + '/js/channel-add.js',
-        "pg-channel-manage.js": clientSrcPath + '/js/pg-channel-manage.js'
-        "pg-third-paty-cp.js": clientSrcPath + '/js/pg-third-paty-cp.js'
+        "pg-index": clientSrcPath + '/js/pg-index.js',
+        "pg-login": clientSrcPath + '/js/pg-login.js',
+        "pg-manage-content": clientSrcPath + '/js/pg-manage-content.js',
+        "pg-book-detail": clientSrcPath + '/js/pg-book-detail.js',
+        "pg-channel-add": clientSrcPath + '/js/pg-channel-add.js',
+        "pg-channel-manage": clientSrcPath + '/js/pg-channel-manage.js',
+        "pg-third-party-cp": clientSrcPath + '/js/pg-third-party-cp.js'
     },
     resolve: {
-        root: [path.join(__dirname, "./client/bower_components/")],
+        root: [path.join(__dirname, "./client/bower_components")],
         // modulesDirectories: ["node_modules", "./client/bower_components/"],
         // modulesDirectories: ["web_modules", "node_modules", "./client/bower_components"],
         alias: {
@@ -67,7 +68,7 @@ module.exports = {
         new ExtractTextPlugin('css/[name].css'),
         new webpack.optimize.CommonsChunkPlugin({
             name: 'common-libs',
-            filename: 'js/common-libs.js',
+            filename: 'js/common-libs.js'
         })
     ]
 };

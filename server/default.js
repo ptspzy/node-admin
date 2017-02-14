@@ -12,7 +12,7 @@
 
     http_server.listen(httpPort, function (){
         console.log('HTTP server listening on port', httpPort);
-        console.log('Node:', 'yueloo');
+        console.log('Node:', 'admin');
     });
 
     // error page
