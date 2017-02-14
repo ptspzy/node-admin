@@ -7,6 +7,7 @@ bower install
 ```
 npm install supervisor -g
 npm i
+webpack -w --progress
 npm run start
 ```
 
