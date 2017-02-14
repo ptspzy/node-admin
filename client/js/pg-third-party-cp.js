@@ -1,7 +1,8 @@
 require('./sb-admin-2.js');
 
 require('bootstrap-datepicker');
-require('../bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.zh-CN.min');
+require('../bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.css');
+require('../bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.zh-CN.min.js');
 
 $(document).ready(function () {
 

@@ -10,6 +10,7 @@ var routeRegister = function(app) {
     app.use('/channel_manage', require('./routes/channel_manage.js'));
     app.use('/channel_cooperation', require('./routes/channel_cooperation.js'));
     app.use('/third_party_cp', require('./routes/third_party_cp.js'));
+    app.use('/modify_profile', require('./routes/modify_profile.js'));
 
     /* 404 */
     app.use(function (req, res) {

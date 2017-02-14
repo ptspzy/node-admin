@@ -24,7 +24,8 @@ module.exports = {
         "pg-book-detail": clientSrcPath + '/js/pg-book-detail.js',
         "pg-channel-add": clientSrcPath + '/js/pg-channel-add.js',
         "pg-channel-manage": clientSrcPath + '/js/pg-channel-manage.js',
-        "pg-third-party-cp": clientSrcPath + '/js/pg-third-party-cp.js'
+        "pg-third-party-cp": clientSrcPath + '/js/pg-third-party-cp.js',
+        "pg-modify-profile": clientSrcPath + '/js/pg-modify-profile.js'
     },
     resolve: {
         root: [path.join(__dirname, "./client/bower_components")],

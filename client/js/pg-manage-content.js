@@ -5,7 +5,8 @@ require( 'datatables.net-bs' );
 require('../bower_components/datatables.net-bs/css/dataTables.bootstrap.css');
 
 require('bootstrap-datepicker');
-require('../bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.zh-CN.min');
+require('../bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.css');
+require('../bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.zh-CN.min.js');
 
 require('bootstrap-select');
 require('../bower_components/bootstrap-select/dist/css/bootstrap-select.css');
